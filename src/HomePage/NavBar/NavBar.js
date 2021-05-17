@@ -3,10 +3,6 @@ import { Navbar, Nav } from 'react-bootstrap';
 import './NavBar.css';
 
 class NavBar extends Component {
-    constructor(props) {
-        super(props); 
-    }
-
     render() {
         return (
             <div> 
@@ -15,12 +11,12 @@ class NavBar extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                         <Nav>
-                            <Nav.Link href="#watch">WATCH</Nav.Link>
-                            <Nav.Link href="#connect">CONNECT</Nav.Link>
-                            <Nav.Link href="#events">EVENTS</Nav.Link>
-                            <Nav.Link href="#teachings">TEACHINGS</Nav.Link>
-                            <Nav.Link href="#give">GIVE</Nav.Link>
-                            <Nav.Link href="#login">LOGIN</Nav.Link>
+                            <Nav.Link href="/watch">WATCH</Nav.Link>
+                            <Nav.Link href="/connect">CONNECT</Nav.Link>
+                            <Nav.Link href="/events">EVENTS</Nav.Link>
+                            <Nav.Link href="/teachings">TEACHINGS</Nav.Link>
+                            <Nav.Link href="/give">GIVE</Nav.Link>
+                            <Nav.Link href="/login">LOGIN</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
