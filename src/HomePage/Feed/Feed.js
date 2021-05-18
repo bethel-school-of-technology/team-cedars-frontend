@@ -44,11 +44,11 @@ class ImagesDisplay extends Component {
             <div>
                 <Container fluid="lg">
                     <Row>
-                            <Col>
-                                <a href="/knowJesus">
-                                    <Image src="https://i.picsum.photos/id/788/200/300.jpg?hmac=86XnLHCHcI7HWgr9Y662VsXxUxs7H70DjGHc_6iaIw4" alt="Know Jesus" className="LinkPics hover-zoom" fluid></Image>
-                                </a>
-                            </Col>
+                        <Col>
+                            <a href="/knowJesus">
+                                <Image src="https://i.picsum.photos/id/788/200/300.jpg?hmac=86XnLHCHcI7HWgr9Y662VsXxUxs7H70DjGHc_6iaIw4" alt="Know Jesus" className="LinkPics hover-zoom" fluid></Image>
+                            </a>
+                        </Col>
                         <br/>
                         <Col>
                             <a href="/events">
@@ -98,7 +98,7 @@ class SignUpForm extends Component {
                                 <Button variant="primary" type="submit">Submit</Button>
                             </Form>
                         </Col>
-
+                        <br/>
                         <Col>
                             <Image src="https://i.picsum.photos/id/19/200/300.jpg?hmac=znGSIxHtiP0JiLTKW6bT7HlcfagMutcHfeZyNkglQFM" alt="Signup Form"></Image>
                         </Col>

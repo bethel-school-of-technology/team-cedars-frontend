@@ -3,7 +3,6 @@
      max-width: 100%; 
  }
 
-
  img.hover-zoom:hover {
     transform: scale(1.25);
   }
