@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Navbar, Nav } from 'react-bootstrap'; 
+import { Navbar, Nav } from 'react-bootstrap';
 import './NavBar.css';
 
 class NavBar extends Component {
     render() {
         return (
-            <div> 
+            <div>
                 <Navbar bg="light" expand="lg" className="HomePageNavBar" fixed="sticky">
                     <Navbar.Brand href="#home">CCOTH</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -16,7 +16,7 @@ class NavBar extends Component {
                             <Nav.Link href="/events">EVENTS</Nav.Link>
                             <Nav.Link href="/teachings">TEACHINGS</Nav.Link>
                             <Nav.Link href="/give">GIVE</Nav.Link>
-                            <Nav.Link href="/login">LOGIN</Nav.Link>
+                            <Nav.Link href="../../Login/LoginApp.js">LOGIN</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
@@ -26,4 +26,4 @@ class NavBar extends Component {
 }
 
 
-export default NavBar; 
+export default NavBar;
