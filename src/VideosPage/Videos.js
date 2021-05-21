@@ -54,12 +54,12 @@ class VideoFeed extends Component {
                             <br/>
                             <br/>
                             <div className="embed-responsive embed-responsive-16by9">
-                                <iframe src="https://player.vimeo.com/video/{video_id}" 
-                                        maxWidth="100%" 
-                                        height="600" 
-                                        frameborder="0" 
-                                        title="Video"
-                                        webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                <iframe src="https://player.vimeo.com/video/373201297" 
+                                    width="640" 
+                                    height="360" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen; picture-in-picture" 
+                                    allowfullscreen
                                 ></iframe>
                             </div>
                         </Col>
