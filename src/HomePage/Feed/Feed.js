@@ -8,11 +8,18 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'; 
 
 import Banner from '../Images/Banner.png'; 
+
 import './Feed.css'; 
+import '../Footer/Footer.css';
+import '../NavBar/NavBar.css'; 
+
+import Footer from '../Footer/Footer.js'; 
+import NavBar from '../NavBar/NavBar.js'; 
 
 function HomePageApp() {
     return (
       <div className="App bg-light">
+        <NavBar/>
         <HomePageBanner/>
         <br/>
         <br/>
@@ -23,6 +30,7 @@ function HomePageApp() {
         <br/>
         <br/>
         <HomePageMap/>
+        <Footer/>
       </div>
     );
   }
