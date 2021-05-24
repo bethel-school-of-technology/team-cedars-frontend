@@ -14,9 +14,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <HomePageApp /> */}
-      {/* <LoginApp /> */}
-      {/* <Footer /> */}
+      <HomePageApp />
+      <LoginApp />
+      <Footer />
       <VideoFeed/>
     </div>
   );
