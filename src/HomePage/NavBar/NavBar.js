@@ -14,20 +14,38 @@ class NavBar extends Component {
     render() {
         return (
             <div>
-                <Navbar bg="light" expand="lg" className="HomePageNavBar" fixed="sticky">
-                    <Navbar.Brand href="/home">CCOTH</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-                        <Nav>
-                            <Nav.Link href="/watch">WATCH</Nav.Link>
-                            <Nav.Link href="/connect">CONNECT</Nav.Link>
-                            <Nav.Link href="/events">EVENTS</Nav.Link>
-                            <Nav.Link href="/teachings">TEACHINGS</Nav.Link>
-                            <Nav.Link href="/give">GIVE</Nav.Link>
-                            <Nav.Link href="../../Login/LoginApp.js">LOGIN</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
+                <Router>
+                    <Navbar bg="light" expand="lg" className="HomePageNavBar" fixed="sticky">
+                        <Navbar.Brand href="/home">CCOTH</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+                            <Nav>
+                                <Link t0="/">HOME</Link>
+                                <Link to="/events">EVENTS</Link>
+                                <Link to="/videos">TEACHINGS</Link>
+                                <Link to="/login">LOGIN</Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
+
+                    <Switch>
+                        <Route path="/events">
+                            <Events />
+                        </Route>
+
+                        <Route path="/videos">
+                            <VideoFeed />
+                        </Route>
+
+                        <Route path="/login">
+                            <LoginApp />
+                        </Route>
+
+                        <Route path="/home">
+                            <HomePageApp />
+                        </Route>
+                    </Switch>
+                </Router>
             </div>
         );
     }
