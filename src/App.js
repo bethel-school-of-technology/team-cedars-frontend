@@ -6,6 +6,8 @@ import NavBar from './HomePage/NavBar/NavBar.js';
 import HomePageApp from './HomePage/Feed/Feed.js';
 import Footer from './HomePage/Footer/Footer.js';
 import LoginApp from './Login/LoginApp';
+import VideoApp from './VideosPage/Videos.js';
+import AdminVideoApp from './VideosPage/VideosTest.js'; 
 import VideoFeed from './VideosPage/Videos.js'
 import Events from './EventsPage/Events';
 
