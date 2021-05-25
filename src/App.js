@@ -8,6 +8,8 @@ import Footer from './HomePage/Footer/Footer.js';
 import LoginApp from './Login/LoginApp';
 import VideoApp from './VideosPage/Videos.js';
 import AdminVideoApp from './VideosPage/VideosTest.js'; 
+import VideoFeed from './VideosPage/Videos.js'
+import Events from './EventsPage/Events';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,9 +19,10 @@ function App() {
       <NavBar />
       <HomePageApp />
       <LoginApp />
+      <VideoFeed/>
+      <Events/>
       <Footer />
-      <VideoApp/>
-      <AdminVideoApp/>
+     
     </div>
   );
 }
