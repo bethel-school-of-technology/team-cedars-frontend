@@ -16,6 +16,8 @@ import HomePageApp from './HomePage/Feed/Feed.js';
 import Footer from './HomePage/Footer/Footer.js';
 import LoginApp from './Login/LoginApp';
 import VideoFeed from './VideosPage/Videos'
+import VideoApp from './VideosPage/Videos.js';
+import AdminVideoApp from './VideosPage/VideosTest.js'; 
 import Events from './EventsPage/Events';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
