@@ -15,10 +15,10 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <HomePageApp />
+      <HomePageApp />
       <LoginApp />
-      <Footer /> */}
-      {/* <VideoApp/> */}
+      <Footer />
+      <VideoApp/>
       <AdminVideoApp/>
     </div>
   );
