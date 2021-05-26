@@ -16,7 +16,7 @@ const VideoApp = props => {
         {
             videoTitle: 'Halloween Trick or Greet',
             videoInfo: 'Starring Jason',
-            videoUrl: 'chttps://www.youtube.com/embed/FGdKUyTtMzA'
+            videoUrl: 'https://www.youtube.com/embed/FGdKUyTtMzA'
         }
     ];
 
