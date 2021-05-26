@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch,
+    useParams
+} from "react-router-dom";
 import Login from './Login';
+import Admin from '../AdminPage/Admin';
 import './Login.css';
 
 class LoginApp extends Component {
@@ -27,13 +37,13 @@ class LoginApp extends Component {
     onUsernameChange = (e) => this.setState({ ...this.state, username: e.target.value });
     onPasswordChange = (e) => this.setState({ ...this.state, password: e.target.value });
 
-    onGetValues = () => {
-        fetch("http://localhost:8080/api/videos", {
-            headers: { 'Authorization': this.state.token }
-        })
-            .then(res => res.json())
-            .then(json => this.setState({ ...this.state, values: json }));
-    }
+    // onGetValues = () => {
+    //     fetch("http://localhost:8080/api/videos", {
+    //         headers: { 'Authorization': this.state.token }
+    //     })
+    //         .then(res => res.json())
+    //         .then(json => this.setState({ ...this.state, values: json }));
+    // }
 
     render() {
         return (
@@ -44,7 +54,7 @@ class LoginApp extends Component {
                             onPasswordChange={this.onPasswordChange}
                             onLogin={this.onLogin}
                             error={this.state.error}></Login>)
-                        : ("This Worked")}
+                        : (<Admin />)}
                 </header>
             </div>
         );
