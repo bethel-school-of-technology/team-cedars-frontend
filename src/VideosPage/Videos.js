@@ -4,9 +4,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Videos.css'; 
 
+
 function VideoPageApp() {
     return (
         <div>
+            <VideosNavBar />
             <VideoFeed/>
         </div>
     )
@@ -53,7 +55,7 @@ class VideoFeed extends Component {
                             <br/>
                             <br/>
                             <div className="embed-responsive embed-responsive-16by9">
-                                <iframe src="https://player.vimeo.com/video/373201297" 
+                                <iframe title="Styling" src="https://player.vimeo.com/video/373201297" 
                                     width="640" 
                                     height="360" 
                                     frameborder="0" 

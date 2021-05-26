@@ -10,8 +10,12 @@ const UploadForm = () => {
 
 
     const changeHandler = (e) => {
+        // selected is used to target each file that's been 
+        // uploaded and pushed into the arrey
         let selected = e.target.files[0];
 
+        
+        // to check if the type of file is correct, if not then return else
         if (selected && types.includes(selected.type)) {
             setFile(selected);
             setError('');
@@ -19,7 +23,7 @@ const UploadForm = () => {
             setFile(null);
             window.alert('Please select an image file (png or jpeg)');
         }
-    }
+    };
 
     return (
         <form className="forms">
