@@ -42,7 +42,7 @@ function App() {
 
         <Switch>
           <Route path="/events">
-            <Events />
+            {/* <Events /> */}
           </Route>
 
           <Route path="/videos">
