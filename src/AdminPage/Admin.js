@@ -3,46 +3,35 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link,
-    useRouteMatch,
-    useParams
+    Link
 } from "react-router-dom";
+import Image from 'react-bootstrap/Image';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+
 import VideoFeed from '../VideosPage/Videos'
 import Events from '../EventsPage/Events';
-import HomePageApp from '../HomePage/Footer/Footer.js'
+
+
 
 export class Admin extends Component {
     render() {
         return (
-            <div>
-                <Router>
-                    <ul>
-                        <li>
-                            <Link to="/">HOME</Link>
-                        </li>
-                        <li>
-                            <Link to="/events">EVENTS</Link>
-                        </li>
-                        <li>
-                            <Link to="/videos">VIDEOS</Link>
-                        </li>
-                    </ul>
+            <>
 
-                    <Switch>
-                        <Route path="/events">
-                            <Events />
-                        </Route>
 
-                        <Route path="/videos">
-                            <VideoFeed />
-                        </Route>
+                <Button href="/events" variant="secondary" size="lg" block>
+                    EVENTS
+                    </Button>
 
-                        <Route path="/">
-                            <HomePageApp />
-                        </Route>
-                    </Switch>
-                </Router>
-            </div>
+                <Button href="/videos" variant="secondary" size="lg" block>
+                    VIDEOS
+                    </Button>
+
+
+            </>
         )
     }
 }

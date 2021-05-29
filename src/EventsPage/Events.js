@@ -11,7 +11,7 @@ function Events() {
     <div className="App">
       <Title />
       <UploadForm />
-      {/* <ImageGrid /> */}
+      <ImageGrid />
     </div>
   );
 }
