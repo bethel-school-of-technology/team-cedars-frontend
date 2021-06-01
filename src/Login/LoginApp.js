@@ -37,13 +37,13 @@ class LoginApp extends Component {
     onUsernameChange = (e) => this.setState({ ...this.state, username: e.target.value });
     onPasswordChange = (e) => this.setState({ ...this.state, password: e.target.value });
 
-    // onGetValues = () => {
-    //     fetch("http://localhost:8080/api/videos", {
-    //         headers: { 'Authorization': this.state.token }
-    //     })
-    //         .then(res => res.json())
-    //         .then(json => this.setState({ ...this.state, values: json }));
-    // }
+    onGetValues = () => {
+        fetch("http://localhost:8080/api/video", {
+            headers: { 'Authorization': this.state.token }
+        })
+            .then(res => res.json())
+            .then(json => this.setState({ ...this.state, values: json }));
+    }
 
     render() {
         return (
