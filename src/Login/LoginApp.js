@@ -38,7 +38,7 @@ class LoginApp extends Component {
     onPasswordChange = (e) => this.setState({ ...this.state, password: e.target.value });
 
     onGetValues = () => {
-        fetch("http://localhost:8080/api/videos", {
+        fetch("http://localhost:8080/api/video", {
             headers: { 'Authorization': this.state.token }
         })
             .then(res => res.json())

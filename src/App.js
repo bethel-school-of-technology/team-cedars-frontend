@@ -60,7 +60,8 @@ function App() {
       </Router>
 
       <Footer />
-
+      //Just added this so I can see what I'm doing
+      <AdminVideoApp/>
     </div>
   );
 }
