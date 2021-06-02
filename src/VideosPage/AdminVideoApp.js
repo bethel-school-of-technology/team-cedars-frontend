@@ -9,14 +9,8 @@ function AdminVideoApp() {
     return(
         <div>
             <AdminVideoPost/>
-            <AdminVideoGet/>
-            <AdminVideoDelete/>
         </div>
     );
-}
-
-class AdminVideoGet extends Component {
-
 }
 
 class AdminVideoPost extends Component {
@@ -76,8 +70,5 @@ class AdminVideoPost extends Component {
     }
 }
 
-class AdminVideoDelete extends Component {
-    
-}
 
 export default AdminVideoApp; 
