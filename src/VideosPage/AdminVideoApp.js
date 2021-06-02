@@ -1,9 +1,25 @@
 import React, { Component } from 'react'; 
 import { Form, Button, Container } from 'react-bootstrap';
 
+import Videos from '../VideosPage/VideoPageArray'; 
+
 //https://www.youtube.com/embed/5NEe8OkXVzE
 
-class AdminVideoApp extends Component {
+function AdminVideoApp() {
+    return(
+        <div>
+            <AdminVideoPost/>
+            <AdminVideoGet/>
+            <AdminVideoDelete/>
+        </div>
+    );
+}
+
+class AdminVideoGet extends Component {
+
+}
+
+class AdminVideoPost extends Component {
     constructor(props) {
         super(props); 
         this.state = {
@@ -20,7 +36,7 @@ class AdminVideoApp extends Component {
             headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
             method: "POST",
             body: JSON.stringify({ title: this.state.title, info: this.state.info, url: this.state.url })
-        }))
+        }));
     }
 
     onTitleChange = (e) => this.setState({ ...this.state, title: e.target.value });
@@ -58,6 +74,10 @@ class AdminVideoApp extends Component {
             </div>
         )
     }
+}
+
+class AdminVideoDelete extends Component {
+    
 }
 
 export default AdminVideoApp; 
