@@ -10,11 +10,6 @@ import Button from 'react-bootstrap/Button';
 import Banner from '../Images/Banner.png';
 
 import './Feed.css';
-import '../Footer/Footer.css';
-import '../NavBar/NavBar.css';
-
-import Footer from '../Footer/Footer.js';
-import NavBar from '../NavBar/NavBar.js';
 
 function HomePageApp() {
     return (
@@ -30,7 +25,6 @@ function HomePageApp() {
             <br />
             <br />
             <HomePageMap />
-            <Footer />
         </div>
     );
 }
@@ -77,6 +71,34 @@ class ImagesDisplay extends Component {
 }
 
 class SignUpForm extends Component {
+    constructor(props) {
+        super(props); 
+        this.state = {
+            firstName: "",
+            lastName: "", 
+            email: ""
+        }
+        this.onClicking = this.onClicking.bind(this); 
+    }
+
+    onClicking = (e) => {
+        //When this form is submitted, it keeps whatever input was typed in, even after the user presses submit.
+        //I'm afraid that people are going to press it numerous times, because they think it didn't go through, so 
+        //I commented out the line below so that the page refreshes after selecting submit. All the data is still entered 
+        //into the database, so I don't think it's a problem. 
+        // e.preventDefault(); 
+        this.setState(fetch("http://localhost:8080/signup", {
+            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+            method: "POST",
+            body: JSON.stringify({ firstName: this.state.firstName, lastName: this.state.lastName, email: this.state.email })
+        }));
+        alert("Thanks for signing up!"); 
+    }
+
+    onFirstNameChange = (e) => this.setState({ ...this.state, firstName: e.target.value });
+    onLastNameChange = (e) => this.setState({ ...this.state, lastName: e.target.value });
+    onEmailChange = (e) => this.setState({ ...this.state, email: e.target.value });
+    
     render() {
         return (
             <div>
@@ -87,23 +109,25 @@ class SignUpForm extends Component {
                             <h4>Sign up to receive direct updates from CCOH to your inbox!</h4>
                             <br />
                             <br />
-                            <Form>
-                                <Form.Group controlId="formBasicText">
+                            <Form onSubmit={this.onClicking}>
+                                <Form.Group controlId="formBasicText" role="form">
                                     <Form.Label>First Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Please enter your first name" />
+                                    <Form.Control type="text" placeholder="Please enter your first name" onChange={this.onFirstNameChange}/>
                                 </Form.Group>
 
-                                <Form.Group controlId="formBasicText">
+                                <Form.Group controlId="formBasicText" role="form">
                                     <Form.Label>Last Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Please enter your last name" />
+                                    <Form.Control type="text" placeholder="Please enter your last name" onChange={this.onLastNameChange}/>
                                 </Form.Group>
 
-                                <Form.Group controlId="formBasicEmail">
+                                <Form.Group controlId="formBasicEmail" role="form">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" placeholder="Please enter your email address" />
+                                    <Form.Control type="email" placeholder="Please enter your email address" onChange={this.onEmailChange}/>
                                 </Form.Group>
 
-                                <Button variant="primary" type="submit">Submit</Button>
+                                <Form.Group onSubmit={this.onClicking}>
+                                    <Button variant="primary" type="submit">Submit</Button>
+                                </Form.Group>
                             </Form>
                         </Col>
                         <br />
@@ -122,7 +146,7 @@ class HomePageMap extends Component {
         return (
             <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.3960587365864!2d-118.0771884849445!3d33.72457328069642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd257189b8071f%3A0x94f819a76929b827!2s16450%20Pacific%20Coast%20Hwy%20%23100%2C%20Huntington%20Beach%2C%20CA%2092649!5e0!3m2!1sen!2sus!4v1621340881061!5m2!1sen!2sus"
-                    style={{ width: "100%", height: "600px", style: "border:0;", allowfullscreen: "true", loading: "lazy" }} title="CCOHLocation" fluid />
+                    style={{ width: "100%", height: "600px", style: "border:0", allowfullscreen: "true", loading: "lazy" }} title="CCOHLocation" fluid="lg" />
             </div>
         );
     }
