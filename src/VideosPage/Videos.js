@@ -1,11 +1,11 @@
 import React from 'react';
 import './Videos.css';
-import Videos from './VideoPageArray'; 
+import VideoList from './VideoPageArray';
 
- const VideoApp = props => {
+const VideoApp = props => {
     return (
         <div>
-            <Display videos={Videos} />
+            <Display videos={VideoList} />
         </div>
     )
 };
@@ -37,4 +37,4 @@ const Display = props => {
     )
 }
 
-export default VideoApp; 
+export default VideoApp;
