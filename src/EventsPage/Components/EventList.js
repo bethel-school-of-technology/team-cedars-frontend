@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import '../Events.css';
+import '../EventsList.css';
 import EventContent from './EventContent';
 
 export class EventList extends Component {
