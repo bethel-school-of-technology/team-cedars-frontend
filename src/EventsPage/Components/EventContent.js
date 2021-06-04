@@ -7,7 +7,7 @@ const EventContent = () => {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8080/api/v1/events').then(results => {
+        axios.get('http://localhost:8080/api/events').then(results => {
             console.log(results);
             setEvents(results.data);
         });
@@ -20,7 +20,7 @@ const EventContent = () => {
         <ul className="list">
             {events.map(event => (
                 <li key={event.id}>
-                    <span><p className="event">{event.event_title}</p><sub className="userAddress">{event.event_description}</sub></span>
+                    <span><p className="event">{event.eventTitle}</p><sub className="description">{event.description}</sub><sub className="date">{event.date}</sub></span>
                     {/* <button onClick={() => deleteContent(event.id)} className="delete-btn">x</button> */}
                 </li>
             ))
