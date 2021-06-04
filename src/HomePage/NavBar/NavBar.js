@@ -6,10 +6,10 @@ import {
 } from "react-router-dom";
 import { Navbar, Nav } from 'react-bootstrap';
 import './NavBar.css';
-import Events from '../../EventsPage/Events';
 import VideoFeed from '../../VideosPage/Videos';
 import LoginApp from '../../Login/LoginApp';
 import HomePageApp from '../../HomePage/Feed/Feed';
+import EventList from '../../EventsPage/Components/EventList';
 
 
 
@@ -48,7 +48,7 @@ class NavBar extends Component {
                 <Router>
                     <Switch>
                         <Route path="/events">
-                            <Events />
+                            <EventList />
                         </Route>
 
                         <Route path="/videos">
