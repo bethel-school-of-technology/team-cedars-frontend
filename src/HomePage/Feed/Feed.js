@@ -13,7 +13,7 @@ import './Feed.css';
 
 function HomePageApp() {
     return (
-        <div className="App bg-light">
+        <div className="App">
 
             <HomePageBanner />
             <br />
@@ -33,8 +33,8 @@ function HomePageApp() {
 class HomePageBanner extends Component {
     render() {
         return (
-            <div className="bg-white">
-                <Image src={Banner} alt="Banner" fluid></Image>
+            <div>
+                <Image src={Banner} alt="Banner" fluid ></Image>
             </div>
         );
     }
@@ -102,7 +102,7 @@ class SignUpForm extends Component {
     render() {
         return (
             <div>
-                <Container fluid="lg" className="bg-white text-left" >
+                <Container fluid="lg" className="bg-white text-left">
                     <Row>
                         <Col>
                             <h1>Staying Connected</h1>
