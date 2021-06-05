@@ -29,12 +29,11 @@ function HomePageApp() {
     );
 }
 
-
 class HomePageBanner extends Component {
     render() {
         return (
             <div>
-                <Image src={Banner} alt="Banner" fluid ></Image>
+                <Image src={Banner} alt="Banner" fluid></Image>
             </div>
         );
     }
@@ -106,7 +105,7 @@ class SignUpForm extends Component {
                     <Row>
                         <Col>
                             <h1>Staying Connected</h1>
-                            <h4>Sign up to receive direct updates from CCOH to your inbox!</h4>
+                            <h4>Sign up to receive direct updates from CCOTH to your inbox!</h4>
                             <br />
                             <br />
                             <Form onSubmit={this.onClicking}>

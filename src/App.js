@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,18 +14,15 @@ import Footer from './HomePage/Footer/Footer.js';
 import LoginApp from './Login/LoginApp';
 import Events from './EventsPage/Events';
 import VideoApp from './VideosPage/Videos'; 
-=======
 
 import './App.css';
 import './HomePage/NavBar/NavBar.css';
 import NavBar from './HomePage/NavBar/NavBar.js';
-import Footer from './HomePage/Footer/Footer.js';
 
 
 
 //Added on 2.0 process of Videos Page
 import AdminVideoApp from './VideosPage/AdminVideoApp';
->>>>>>> 9ebf60351cf4370ba507cce698b156e4c9c5a108
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -40,13 +36,13 @@ function App() {
         <Footer />
       </div>
 
-      <Router>
+      {/* <Router>
         <Navbar bg="light" expand="lg" className="HomePageNavBar" fixed="sticky">
           <Navbar.Brand href="/">CCOTH</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
             <Nav>
-              <Link t0="/">HOME</Link>
+              <Link to="/">HOME</Link>
               <Link to="/events">EVENTS</Link>
               <Link to="/videos">TEACHINGS</Link>
               <Link to="/login">LOGIN</Link>
@@ -71,9 +67,9 @@ function App() {
             <HomePageApp />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

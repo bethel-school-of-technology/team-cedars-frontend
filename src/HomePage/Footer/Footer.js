@@ -6,6 +6,8 @@ import TwitterIcon from '../Images/TwitterIcon.svg';
 import InstagramIcon from '../Images/InstagramIcon.svg'; 
 import { Figure } from 'react-bootstrap';
 
+import './Footer.css';
+
 class Footer extends Component {
     render() {
         return (
