@@ -6,10 +6,11 @@ import {
 } from "react-router-dom";
 import { Navbar, Nav } from 'react-bootstrap';
 import './NavBar.css';
-import VideoFeed from '../../VideosPage/Videos';
+import VideoApp from '../../VideosPage/Videos';
+// import AdminVideoApp from '../../VideosPage/AdminVideoApp'; 
 import LoginApp from '../../Login/LoginApp';
 import HomePageApp from '../../HomePage/Feed/Feed';
-import EventList from '../../EventsPage/Components/EventList';
+import Events from '../../EventsPage/Events';
 
 
 
@@ -23,24 +24,23 @@ class NavBar extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                         <Nav>
-
                             <Nav.Link href="/">
                                 <h5>HOME</h5>
                             </Nav.Link>
                             <Nav.Link href="/events">
                                 <h5>
                                     EVENTS
-                                    </h5>
+                                </h5>
                             </Nav.Link>
                             <Nav.Link href="/videos">
                                 <h5>
                                     TEACHINGS
-                                    </h5>
+                                </h5>
                             </Nav.Link>
                             <Nav.Link href="/login">
                                 <h5>
                                     LOGIN
-                                    </h5>
+                                </h5>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
@@ -48,11 +48,12 @@ class NavBar extends Component {
                 <Router>
                     <Switch>
                         <Route path="/events">
-                            <EventList />
+                            <Events />
                         </Route>
 
                         <Route path="/videos">
-                            <VideoFeed />
+                            <VideoApp />
+                            {/* <AdminVideoApp /> */}
                         </Route>
 
                         <Route path="/login">
@@ -64,11 +65,9 @@ class NavBar extends Component {
                         </Route>
                     </Switch>
                 </Router>
-
             </div >
         );
     }
 }
-
 
 export default NavBar;

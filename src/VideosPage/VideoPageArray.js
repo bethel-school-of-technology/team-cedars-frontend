@@ -1,13 +1,11 @@
-
 import axios from 'axios';
+import { Container } from 'react-bootstrap'; 
 import { useEffect, useState } from 'react';
 import './Videos.css';
 
 const VideoList = () => {
 
     const [videos, setVideos] = useState([]);
-
-
 
     useEffect(() => {
         axios.get('http://localhost:8080/api/video').then(results => {
@@ -18,10 +16,9 @@ const VideoList = () => {
 
     console.log(videos);
 
-
-
-
     return (
+        <Container>
+
         <ul>
             {videos.map(video => (
                 <div key={video.id}>
@@ -34,24 +31,19 @@ const VideoList = () => {
                         src={video.url}
                         width="640"
                         height="360"
-                        frameborder="0"
+                        frameBorder="0"
                         title="defaultVideo"
                         allow="autoplay; fullscreen; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                     <br />
                     <br />
                 </div>
             ))}
         </ul>
-
+        </Container>
 
     );
 }
-
-
-
-
-
 
 export default VideoList;
