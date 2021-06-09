@@ -13,6 +13,7 @@ import './Feed.css';
 
 function HomePageApp() {
     return (
+
         <div className="App">
 
             <HomePageBanner />
@@ -32,6 +33,7 @@ function HomePageApp() {
 class HomePageBanner extends Component {
     render() {
         return (
+
             <div>
                 <Image src={Banner} alt="Banner" fluid></Image>
             </div>
@@ -46,38 +48,47 @@ class ImagesDisplay extends Component {
                 <Container fluid="lg">
                     <Row>
                         <Col>
-                            <a href="/knowJesus">
-                                <Image src="https://i.picsum.photos/id/788/200/300.jpg?hmac=86XnLHCHcI7HWgr9Y662VsXxUxs7H70DjGHc_6iaIw4" alt="Know Jesus" className="LinkPics hover-zoom" fluid></Image>
+                            <a href="/knowJesis">
+                                <div className="container">
+                                    <Image src="https://i.picsum.photos/id/788/200/300.jpg?hmac=86XnLHCHcI7HWgr9Y662VsXxUxs7H70DjGHc_6iaIw4" alt="Know Jesus" className="LinkPics hover-zoom" fluid></Image>
+                                    <div class="centered">Know Jesus</div>
+                                </div>
                             </a>
                         </Col>
                         <br />
                         <Col>
                             <a href="/events">
-                                <Image src="https://i.picsum.photos/id/521/200/300.jpg?hmac=_MGlU-tHw5IBlsNL7YvJ9lTMo4Ge605GWQwuKGxWIWU" alt="Events" className="LinkPics hover-zoom" fluid></Image>
+                                <div className="container">
+                                    <Image src="https://i.picsum.photos/id/521/200/300.jpg?hmac=_MGlU-tHw5IBlsNL7YvJ9lTMo4Ge605GWQwuKGxWIWU" alt="Events" className="LinkPics hover-zoom" fluid></Image>
+                                    <div class="centered">Events</div>
+                                </div>
                             </a>
                         </Col>
                         <br />
                         <Col>
                             <a href="/getInvolved">
-                                <Image src="https://i.picsum.photos/id/756/200/300.jpg?hmac=kojqQY60yVD4KaSEFOEw62LRuwfiOR2f-6ZdnEgKhxM" alt="Get Involved" className="LinkPics hover-zoom" fluid></Image>
+                                <div className="container">
+                                    <Image src="https://i.picsum.photos/id/756/200/300.jpg?hmac=kojqQY60yVD4KaSEFOEw62LRuwfiOR2f-6ZdnEgKhxM" alt="Get Involved" className="LinkPics hover-zoom" fluid></Image>
+                                    <div class="centered">Get Involved</div>
+                                </div>
                             </a>
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </div >
         );
     }
 }
 
 class SignUpForm extends Component {
     constructor(props) {
-        super(props); 
+        super(props);
         this.state = {
             firstName: "",
-            lastName: "", 
+            lastName: "",
             email: ""
         }
-        this.onClicking = this.onClicking.bind(this); 
+        this.onClicking = this.onClicking.bind(this);
     }
 
     onClicking = (e) => {
@@ -91,17 +102,19 @@ class SignUpForm extends Component {
             method: "POST",
             body: JSON.stringify({ firstName: this.state.firstName, lastName: this.state.lastName, email: this.state.email })
         }));
-        alert("Thanks for signing up!"); 
+        alert("Thanks for signing up!");
     }
 
     onFirstNameChange = (e) => this.setState({ ...this.state, firstName: e.target.value });
     onLastNameChange = (e) => this.setState({ ...this.state, lastName: e.target.value });
     onEmailChange = (e) => this.setState({ ...this.state, email: e.target.value });
-    
+
     render() {
         return (
             <div>
+
                 <Container fluid="lg" className="bg-white text-left">
+
                     <Row>
                         <Col>
                             <h1>Staying Connected</h1>
@@ -111,17 +124,17 @@ class SignUpForm extends Component {
                             <Form onSubmit={this.onClicking}>
                                 <Form.Group controlId="formBasicText" role="form">
                                     <Form.Label>First Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Please enter your first name" onChange={this.onFirstNameChange}/>
+                                    <Form.Control type="text" placeholder="Please enter your first name" onChange={this.onFirstNameChange} />
                                 </Form.Group>
 
                                 <Form.Group controlId="formBasicText" role="form">
                                     <Form.Label>Last Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Please enter your last name" onChange={this.onLastNameChange}/>
+                                    <Form.Control type="text" placeholder="Please enter your last name" onChange={this.onLastNameChange} />
                                 </Form.Group>
 
                                 <Form.Group controlId="formBasicEmail" role="form">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" placeholder="Please enter your email address" onChange={this.onEmailChange}/>
+                                    <Form.Control type="email" placeholder="Please enter your email address" onChange={this.onEmailChange} />
                                 </Form.Group>
 
                                 <Form.Group onSubmit={this.onClicking}>

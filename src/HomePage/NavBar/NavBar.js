@@ -19,7 +19,7 @@ class NavBar extends Component {
         return (
             <div>
 
-                <Navbar bg="light" expand="lg" className="HomePageNavBar" fixed="sticky">
+                <Navbar expand="lg" className="HomePageNavBar" fixed="sticky">
                     <Navbar.Brand href="/">CCOTH</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">

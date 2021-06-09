@@ -1,9 +1,9 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 import FacebookIcon from '../Images/FacebookIcon.svg';
-import TwitterIcon from '../Images/TwitterIcon.svg'; 
-import InstagramIcon from '../Images/InstagramIcon.svg'; 
+import TwitterIcon from '../Images/TwitterIcon.svg';
+import InstagramIcon from '../Images/InstagramIcon.svg';
 import { Figure } from 'react-bootstrap';
 
 import './Footer.css';
@@ -12,6 +12,7 @@ class Footer extends Component {
     render() {
         return (
             <div>
+
                 <MDBFooter color="blue" className="font-small pt-4 mt-4 bg-primary">
                     <MDBContainer fluid className="text-left text-md-left text-white">
                         <MDBRow className="d-flex justify-content-between">
@@ -25,6 +26,7 @@ class Footer extends Component {
                                     <li>Tuesdays at 7:00 P.M.</li>
                                     <li>Thursdays at 7:00 P.M.</li>
                                 </ul>
+
                             </MDBCol>
 
                             <MDBCol className="text-center">
@@ -69,7 +71,7 @@ class Footer extends Component {
                             </MDBCol>
                         </MDBRow>
                     </MDBContainer>
-      
+
                     {/* <div className="footer-copyright text-center py-3">
                         <MDBContainer fluid="lg">
                             &copy; {new Date().getFullYear()} Copyright: <a href="https://www.mdbootstrap.com"> Calvary Church of the Harbour </a>
@@ -81,4 +83,4 @@ class Footer extends Component {
     }
 }
 
-export default Footer; 
+export default Footer;
