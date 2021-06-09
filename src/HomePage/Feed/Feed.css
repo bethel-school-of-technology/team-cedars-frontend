@@ -11,7 +11,7 @@
   .text-left {
       align-self: left; 
   }
-
+\
   .centered {
       font-size: x-large;
       color: wheat;
@@ -21,3 +21,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+

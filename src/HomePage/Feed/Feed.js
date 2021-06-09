@@ -13,7 +13,8 @@ import './Feed.css';
 
 function HomePageApp() {
     return (
-        <div className="App bg-cyan">
+
+        <div className="App">
 
             <HomePageBanner />
             <br />
@@ -29,11 +30,11 @@ function HomePageApp() {
     );
 }
 
-
 class HomePageBanner extends Component {
     render() {
         return (
-            <div className="banner">
+
+            <div>
                 <Image src={Banner} alt="Banner" fluid></Image>
             </div>
         );
@@ -111,11 +112,13 @@ class SignUpForm extends Component {
     render() {
         return (
             <div>
-                <Container fluid="lg" className="bg-light text-left" >
+
+                <Container fluid="lg" className="bg-white text-left">
+
                     <Row>
                         <Col>
                             <h1>Staying Connected</h1>
-                            <h4>Sign up to receive direct updates from CCOH to your inbox!</h4>
+                            <h4>Sign up to receive direct updates from CCOTH to your inbox!</h4>
                             <br />
                             <br />
                             <Form onSubmit={this.onClicking}>
