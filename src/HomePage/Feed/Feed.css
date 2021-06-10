@@ -5,8 +5,20 @@
 
  img.hover-zoom:hover {
     transform: scale(1.25);
+    border-end-end-radius: 3px;
   }
-
+ 
   .text-left {
       align-self: left; 
   }
+\
+  .centered {
+      font-size: x-large;
+      color: wheat;
+      text-shadow: 2px 2px #ff0000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
