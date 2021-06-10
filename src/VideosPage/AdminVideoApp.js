@@ -1,8 +1,6 @@
 import React, { Component } from 'react'; 
 import { Form, Button, Container } from 'react-bootstrap';
 
-import Videos from '../VideosPage/VideoPageArray'; 
-
 //https://www.youtube.com/embed/5NEe8OkXVzE
 
 function AdminVideoApp() {
