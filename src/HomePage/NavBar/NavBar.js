@@ -7,7 +7,6 @@ import {
 import { Navbar, Nav } from 'react-bootstrap';
 import './NavBar.css';
 import VideoApp from '../../VideosPage/Videos';
-// import AdminVideoApp from '../../VideosPage/AdminVideoApp'; 
 import LoginApp from '../../Login/LoginApp';
 import HomePageApp from '../../HomePage/Feed/Feed';
 import Events from '../../EventsPage/Events';
@@ -53,7 +52,6 @@ class NavBar extends Component {
 
                         <Route path="/videos">
                             <VideoApp />
-                            {/* <AdminVideoApp /> */}
                         </Route>
 
                         <Route path="/login">
