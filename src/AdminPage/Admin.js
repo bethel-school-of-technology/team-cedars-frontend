@@ -16,7 +16,7 @@ import EventsApp from '../EventsPage/EventsApp';
 export class Admin extends Component {
     render() {
         return (
-            <>
+            <div>
 
 
                 <Button href="/Events" variant="secondary" size="lg" block>
@@ -37,7 +37,7 @@ export class Admin extends Component {
                         </Route>
                     </Switch>
                 </Router>
-            </>
+            </div>
         )
     }
 }
