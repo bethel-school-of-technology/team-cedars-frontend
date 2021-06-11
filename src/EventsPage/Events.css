@@ -1,4 +1,141 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+
+
+/* base styles */
+*
+.navbar h1 {
+  color: #043e51;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #bfd2d9;
+}
+.contents {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.links {
+  color: white;
+  border-radius: 8px;
+}
+
+/* events previews / list */
+.events-details {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.events-details:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+  
+}
+.events-details h2 {
+  font-size: 20px;
+  color: #043e51;
+  margin-bottom: 8px;
+}
+.events-details a {
+  text-decoration: none;
+}
+/* events details page */
+.events-details h2 {
+  font-size: 20px;
+  color: #22646e;
+  margin-bottom: 10px;
+}
+.events-details div {
+  margin: 20px 0;
+}
+
+.delete {
+  background: #bfd2d9;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 90%;
+}
+.delete:hover {
+  background-color: #a7c2cb;
+}
+
+
+ /* create new events form */
+.create-events {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #3b89ac;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #a7c2cb;
+  box-sizing: border-box;
+  display: block;
+  
+  
+}
+.create button {
+  background: #bfd2d9;
+  color: #ffffff; 
+  border: 0;
+  padding: 7px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 85%;
+}
+.create button:hover {
+  background-color: #a7c2cb;
+}
+
+.events-list {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 4px solid #fafafa;
+}
+.events-list:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.events-list h2 {
+  font-size: 20px;
+  color: #8b8484;
+  margin-bottom: 8px;
+}
+.events-list a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 :root {
   --primary: #326deb;
@@ -15,20 +152,6 @@
   max-width: 960px;
   margin: 0 auto;c
 } */
-.title h1 {
-  color: var(--primary);
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  font-weight: normal;
-}
-.title h2,
-.title p {
-  text-align: center;
-}
-.title h2 {
-  margin-top: 60px;
-  font-size: 2.6rem;
-}
 
 /* upload form styles */
 .forms {
@@ -56,7 +179,7 @@
   background: var(--primary);
   color: white;
 }
-.outputs {
+.output{
   height: 60px;
   font-size: 0.8rem;
 }
