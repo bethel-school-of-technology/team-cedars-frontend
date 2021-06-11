@@ -9,7 +9,7 @@ import './NavBar.css';
 import VideoApp from '../../VideosPage/Videos';
 import LoginApp from '../../Login/LoginApp';
 import HomePageApp from '../../HomePage/Feed/Feed';
-import Events from '../../EventsPage/Events';
+import EventsApp from '../../EventsPage/EventsApp';
 
 
 
@@ -47,7 +47,7 @@ class NavBar extends Component {
                 <Router>
                     <Switch>
                         <Route path="/events">
-                            <Events />
+                            <EventsApp />
                         </Route>
 
                         <Route path="/videos">

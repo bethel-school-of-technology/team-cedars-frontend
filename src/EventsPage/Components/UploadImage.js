@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
 
 
-const UploadForm = () => {
+const UploadImage = () => {
     const [file, setFile] = useState(null);
     const [error, setError] = useState(null);
 
@@ -14,7 +14,7 @@ const UploadForm = () => {
         // uploaded and pushed into the arrey
         let selected = e.target.files[0];
 
-        
+
         // to check if the type of file is correct, if not then return else
         if (selected && types.includes(selected.type)) {
             setFile(selected);
@@ -33,10 +33,13 @@ const UploadForm = () => {
             </label>
             <div className="outputs">
                 {error && <div className="error">{error}</div>}
-                {file && <div>LOADING..</div>}
+                {file &&
+                    
+                    <div>{file.name}</div>
+                }
                 {file && <ProgressBar file={file} setFile={setFile} />}
             </div>
         </form>
     )
 }
-export default UploadForm;
+export default UploadImage;

@@ -8,7 +8,7 @@ import {
 import Button from 'react-bootstrap/Button';
 
 import AdminVideoApp from '../VideosPage/Videos';
-import Events from '../EventsPage/Events';
+import EventsApp from '../EventsPage/EventsApp';
 
 
 
@@ -30,7 +30,7 @@ export class Admin extends Component {
                 <Router>
                     <Switch>
                         <Route path="/events">
-                            <Events />
+                            <EventsApp />
                         </Route>
                         <Route path='/AdminVideo'>
                             <AdminVideoApp />

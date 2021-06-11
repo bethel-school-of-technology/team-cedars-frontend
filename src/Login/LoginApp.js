@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useRouteMatch,
-    useParams
-} from "react-router-dom";
+// import {
+//     BrowserRouter as Router,
+//     Switch,
+//     Route,
+//     Link,
+//     useRouteMatch,
+//     useParams
+// } from "react-router-dom";
 import Login from './Login';
 import Admin from '../AdminPage/Admin';
 import './Login.css';
