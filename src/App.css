@@ -13,7 +13,7 @@
   }
 }
 .App {
-  background-color:  #fceeddf8;
+  background-color:  #fffffff8;
 }
 .App-header {
   background-color: #282c34;
@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffff;
 }
 
 .App-link {
