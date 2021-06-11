@@ -3,7 +3,7 @@ import Navigating from './Components/Navigating'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CreateEvents from './Components/CreateEvents';
 import EventsDetails from './Components/EventsDetails';
-import UploadForm from './Components/UploadForm';
+import UploadImage from './Components/UploadImage';
 import ImageGrid from './Components/ImageGrid';
 import './Events.css';
 
@@ -22,7 +22,7 @@ function EventsApp() {
           <Switch>
             <Route path="/create-event">
               <CreateEvents />
-              <UploadForm />
+              <UploadImage />
             </Route>
           </Switch>
           <Switch>
@@ -40,4 +40,5 @@ function EventsApp() {
 
 export default EventsApp;
 
+// Run this cmd for db.json file
 // npx json-server --watch data/db.json --port 8000

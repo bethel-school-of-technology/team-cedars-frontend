@@ -34,8 +34,6 @@
 }
 .events-details:hover {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  background-color: #f2f2f2;
-  color: #f2f2f2;
   
 }
 .events-details h2 {
@@ -64,7 +62,7 @@
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
-  margin-left: 90%;
+  margin-left: 80%;
 }
 .delete:hover {
   background-color: #a7c2cb;
@@ -120,7 +118,7 @@
 }
 .events-list h2 {
   font-size: 20px;
-  color: #8b8484;
+  color: #eeeded;
   margin-bottom: 8px;
 }
 .events-list a{
