@@ -10,7 +10,7 @@ const ImageGrid = () => {
             {docs && docs.map(doc => (
                 <motion.div className="img-wrap" key={doc.id}
                 layout
-                    whileHover={{ opacity: 1 }}
+                    whileHover={{ opacity: 1 }}s
                 >
                     <img src={doc.url} alt="uploaded event" />
                 </motion.div>

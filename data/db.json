@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "title": "Men's Bible Study",
+      "description": "Men's Bible Study with Prayer & Accountability",
+      "date": "2021-06-12",
+      "time": "08:30",
+      "location": "Calvary Chapel of the Harbour 16450 Pacific Coast Hwy., Suite 100 Huntington Beach, CA 92648",
+      "id": 1
+    },
+    {
+      "title": "Acts Drama Group Workshop - Free Event*",
+      "description": "",
+      "date": "2021-05-29",
+      "time": "23:00",
+      "location": "16450 Pacific Coast Highway, Suite 100  Huntington Beach, CA 92649",
+      "id": 2
+    }
+  ]
+}
