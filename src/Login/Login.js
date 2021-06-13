@@ -4,8 +4,8 @@ export default class Login extends React.Component {
     render() {
         if (!this.props.token || this.props.token === "") {
             return (
-                <div>
-                    <div>
+                <div >
+                    <div >
                         <h2>Login:</h2>
                     </div>
                     <div style={{ color: "red" }}>{(this.props.error ? this.props.error : '')}</div>

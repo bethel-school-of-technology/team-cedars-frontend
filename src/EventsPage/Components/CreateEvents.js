@@ -102,12 +102,6 @@ const CreateEvents = () => {
                             </Form.Group>
 
                         </form>
-                        {/* <p>{title}</p>
-            <p>{description}</p>
-            <p>{date}</p>
-            <p>{time}</p>
-            <p>{host}</p>
-            <p>{location}</p> */}
                     </Col>
                 </Row>
             </Container>

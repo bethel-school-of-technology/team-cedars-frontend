@@ -9,12 +9,9 @@ const Navigating = () => {
             Events
           </Button>
         </Link>
-
-
-       
           <Link to="/create-event">
           <Button variant="btn btn-outline-dark">
-            Create a New Event
+            Create Event
           </Button>
         </Link>
      

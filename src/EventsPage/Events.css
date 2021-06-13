@@ -1,31 +1,19 @@
 
 
 /* base styles */
-*
-.navbar h1 {
-  color: #043e51;
-}
-.navbar .links {
-  margin-left: auto;
-}
-.navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
-.navbar a:hover {
-  color: #bfd2d9;
-}
-.contents {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-}
+
 .links {
   color: white;
   border-radius: 8px;
+} 
+.navbar .links {
+  margin-left: auto;
 }
+.contents {
+  max-width: 100vmax;
 
+  margin: 20px 0;
+}
 /* events previews / list */
 .events-details {
   padding: 10px 16px;
@@ -33,7 +21,7 @@
   border-bottom: 1px solid #fafafa;
 }
 .events-details:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.1);
   
 }
 .events-details h2 {
@@ -53,6 +41,12 @@
 .events-details div {
   margin: 20px 0;
 }
+
+#banners{
+  height: 5%;
+}
+
+
 
 /* .delete {
   background: #bfd2d9;
@@ -80,21 +74,22 @@
   display: block;
 }
 .create h2 {
-  font-size: 20px;
-  color: #3b89ac;
+  font-size: bold 30px;
+  
   margin-bottom: 30px;
   text-align: center;
 }
-.create input, .create textarea, .create select {
+.create input, .create textarea {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #a7c2cb;
   box-sizing: border-box;
   display: block;
-  
-  
 }
+
+
+
 /* .create button {
   background: #bfd2d9;
   color: #ffffff; 
@@ -108,7 +103,7 @@
   background-color: #a7c2cb;
 } */
 
-.events-list {
+/* .events-list {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 4px solid #fafafa;
@@ -123,7 +118,7 @@
 }
 .events-list a{
   text-decoration: none;
-}
+} */
 
 
 

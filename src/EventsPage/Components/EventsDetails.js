@@ -1,6 +1,7 @@
 import { useHistory, useParams } from "react-router";
 import useFetch from './useFetch';
-import {MdDateRange, MdAccessTime, MdLocationOn, MdDescription} from 'react-icons/md';
+import { Card, Button } from 'react-bootstrap';
+import { MdDateRange, MdAccessTime, MdLocationOn, MdDescription } from 'react-icons/md';
 
 const EventsDetails = () => {
     const { id } = useParams();
@@ -15,25 +16,24 @@ const EventsDetails = () => {
         })
     }
     return (
-        <div className="events-details">
-            { error && <div>{error}</div>}
-            { events && (
-                <div>
-                    <ul>
-                        <h2>{events.image}</h2>
-                        <br />
-                        <h2>{events.title}</h2>
-                        <br />
-                        <li><MdDescription /> {events.description}</li>
-                        <br />
-                        <li><MdDateRange /> {events.date}</li>
-                        <br />
-                        <li><MdAccessTime /> {events.time}</li>
-                        <br />
-                        <li><MdLocationOn /> {events.location}</li>
-                    </ul>
-                    <br />
-                    <button variant="btn btn-outline-dark" onClick={handleClick}>DELETE</button>
+        <div>
+            {error && <div>{error}</div>}
+            {events && (
+                <div className="events-details">
+                    <Card>
+                        <Card.Body>
+                            <Card.Title>{events.title}</Card.Title>
+                            <Card.Text>
+                                <h2>{events.image}</h2>
+                                <h2>{events.title}</h2>
+                                <p><MdDescription /> {events.description}</p>
+                                <p><MdDateRange /> {events.date}</p>
+                                <p><MdAccessTime /> {events.time}</p>
+                                <p><MdLocationOn /> {events.location}</p>
+                            </Card.Text>
+                            <Button variant="btn btn-outline-dark" onClick={handleClick}>DELETE</Button>
+                        </Card.Body>
+                    </Card>
                 </div>
             )}
         </div>

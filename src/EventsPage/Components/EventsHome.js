@@ -8,12 +8,7 @@ const EventsHome = () => {
   const { data: events, error } = useFetch('http://localhost:8000/events');
 
   return (
-
-
-
-    <div className="home">
-
-
+    <div >
       <div>
         <Image src={Banner} alt="Banner" fluid></Image>
       </div>
