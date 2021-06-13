@@ -33,7 +33,7 @@ const EventsDetails = () => {
                         <li><MdLocationOn /> {events.location}</li>
                     </ul>
                     <br />
-                    <button className="delete" onClick={handleClick}>DELETE</button>
+                    <button variant="btn btn-outline-dark" onClick={handleClick}>DELETE</button>
                 </div>
             )}
         </div>

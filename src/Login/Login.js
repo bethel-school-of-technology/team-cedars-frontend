@@ -5,6 +5,9 @@ export default class Login extends React.Component {
         if (!this.props.token || this.props.token === "") {
             return (
                 <div>
+                    <div>
+                        <h2>Login:</h2>
+                    </div>
                     <div style={{ color: "red" }}>{(this.props.error ? this.props.error : '')}</div>
                     <div>
                         <label htmlFor="username">Username:</label>

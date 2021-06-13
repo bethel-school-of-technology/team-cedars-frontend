@@ -1,13 +1,28 @@
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 const Navigating = () => {
-    return (
-      <nav className="navbar">
-        <div className="links">
-          <Link to="/">Events</Link>
-          <Link to="/create-event">Create New Events</Link>
-        </div>
-      </nav>
-    );
-  }
+  return (
+    <nav className="navbar">
+      <div className="links">
+        <Link to="/">
+        <Button variant="btn btn-outline-dark">
+            Events
+          </Button>
+        </Link>
 
-  export default Navigating;
+
+       
+          <Link to="/create-event">
+          <Button variant="btn btn-outline-dark">
+            Create a New Event
+          </Button>
+        </Link>
+     
+
+        
+      </div>
+    </nav>
+  );
+}
+
+export default Navigating;

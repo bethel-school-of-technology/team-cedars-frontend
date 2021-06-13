@@ -13,15 +13,15 @@ class Footer extends Component {
         return (
             <div>
 
-                <MDBFooter className="font-small pt-4 mt-4 bg-primary">
+                <MDBFooter className="font-small pt-4 mt-4" id="footer">
                     <MDBContainer fluid className="text-left text-md-left text-white">
                         <MDBRow className="d-flex justify-content-between">
                             <MDBCol className="text-left">
-                                <h3 className="title" style={{ color: "#ffe066" }}>Calvary Church of the Harbour</h3>
-                                <h5 className="text-left" style={{ color: "#ffe066" }}>
+                                <h3 className="title" style={{ color: "#fffff" }}>Calvary Church of the Harbour</h3>
+                                <h5 className="text-left" style={{ color: "#ffff" }}>
                                     Service Times:
                                 </h5>
-                                <ul className="text-left" style={{ color: "#ffe066" }}>
+                                <ul className="text-left" style={{ color: "#fffff" }}>
                                     <li>Sundays at 10:45 A.M.</li>
                                     <li>Tuesdays at 7:00 P.M.</li>
                                     <li>Thursdays at 7:00 P.M.</li>
@@ -30,20 +30,21 @@ class Footer extends Component {
                             </MDBCol>
 
                             <MDBCol className="text-center">
-                                <h3 className="title" style={{ color: "#ffe066" }}>Contact Us</h3>
-                                <p style={{ color: "#ffe066" }}>(562) 592-1800</p>
-                                <p style={{ color: "#ffe066" }}>16450 Pacific Coast Highway, Suite 100</p>
-                                <p style={{ color: "#ffe066" }}>info@ccoth.com</p>
+                                <h3 className="title" style={{ color: "#fffff" }}>Contact Us</h3>
+                                <p style={{ color: "#ffff" }}>(562) 592-1800</p>
+                                <p style={{ color: "#fffff" }}>16450 Pacific Coast Highway, Suite 100</p>
+                                <p style={{ color: "#ffff" }}>info@ccoth.com</p>
                             </MDBCol>
 
                             <MDBCol className="text-center">
-                                <h3 className="title" style={{ color: "#ffe066" }}>Follow Us</h3>
+                                <h3 className="title" style={{ color: "#ffff" }}>Follow Us</h3>
                                 <Figure className="d-grid gap-3">
                                     <a href="https://www.facebook.com/CCOTH/">
                                         <Figure.Image
                                             width={60}
                                             height={60}
                                             alt="facebook icon"
+                                            target='_blank'
                                             src={FacebookIcon}
                                             className="hover-zoom p-2"
                                         ></Figure.Image>
@@ -53,6 +54,7 @@ class Footer extends Component {
                                             width={60}
                                             height={60}
                                             alt="twitter icon"
+                                            target='_blank'
                                             src={TwitterIcon}
                                             className="hover-zoom p-2"
                                         ></Figure.Image>
@@ -63,6 +65,7 @@ class Footer extends Component {
                                             width={60}
                                             height={60}
                                             alt="instagram icon"
+                                            target="_blank"
                                             src={InstagramIcon}
                                             className="hover-zoom p-2"
                                         ></Figure.Image>

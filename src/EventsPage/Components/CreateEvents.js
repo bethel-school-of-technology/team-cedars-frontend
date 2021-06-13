@@ -98,7 +98,7 @@ const CreateEvents = () => {
                             </Form.Group>
 
                             <Form.Group>
-                                <Button variant="primary" type="submit">Submit</Button>
+                                <Button variant="btn btn-outline-dark" type="submit">Submit</Button>
                             </Form.Group>
 
                         </form>
