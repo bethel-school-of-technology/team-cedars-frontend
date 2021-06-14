@@ -1,3 +1,4 @@
+import React from 'react'
 import EventsHome from './Components/EventsHome';
 import Navigating from './Components/Navigating'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
