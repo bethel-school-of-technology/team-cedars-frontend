@@ -1,5 +1,7 @@
+
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
+
 const Navigating = () => {
   return (
     <nav className="navbar">
