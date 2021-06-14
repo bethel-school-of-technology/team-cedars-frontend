@@ -9,7 +9,7 @@ import './NavBar.css';
 import VideoApp from '../../VideosPage/Videos';
 import LoginApp from '../../Login/LoginApp';
 import HomePageApp from '../../HomePage/Feed/Feed';
-import EventsApp from '../../EventsPage/EventsApp';
+import EventsHome from '../../EventsPage/Components/EventsHome';
 
 
 
@@ -41,13 +41,14 @@ class NavBar extends Component {
                                     LOGIN
                                 </h5>
                             </Nav.Link>
+                            <Nav.Link href="/events/create-event"></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
                 <Router>
                     <Switch>
                         <Route path="/events">
-                            <EventsApp />
+                            <EventsHome />
                         </Route>
 
                         <Route path="/videos">
