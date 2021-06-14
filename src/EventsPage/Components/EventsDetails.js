@@ -25,7 +25,6 @@ const EventsDetails = () => {
                             <Card.Title>{events.title}</Card.Title>
                             <Card.Text>
                                 <h2>{events.image}</h2>
-                                <h2>{events.title}</h2>
                                 <p><MdDescription /> {events.description}</p>
                                 <p><MdDateRange /> {events.date}</p>
                                 <p><MdAccessTime /> {events.time}</p>
