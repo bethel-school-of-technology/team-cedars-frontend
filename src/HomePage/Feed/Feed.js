@@ -6,8 +6,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import CarouselContainer from './CarouselContainer';
+import Singup from '../Images/signup.jpeg'
 
-import Banner from '../Images/Banner.png';
+// import Banner from '../Images/Banner.png';
 
 import './Feed.css';
 
@@ -16,7 +18,7 @@ function HomePageApp() {
 
         <div className="App">
 
-            <HomePageBanner />
+            <CarouselContainer />
             <br />
             <br />
             <ImagesDisplay />
@@ -28,17 +30,6 @@ function HomePageApp() {
             <HomePageMap />
         </div>
     );
-}
-
-class HomePageBanner extends Component {
-    render() {
-        return (
-
-            <div>
-                <Image src={Banner} alt="Banner" fluid></Image>
-            </div>
-        );
-    }
 }
 
 class ImagesDisplay extends Component {
@@ -118,7 +109,17 @@ class SignUpForm extends Component {
                     <Row>
                         <Col>
                             <h1>Staying Connected</h1>
-                            <h4>Sign up to receive direct updates from CCOTH to your inbox!</h4>
+                            <h4>Sign up to receive direct updates about upcoming events and prayer meetings
+                                from CCOTH to your inbox!</h4>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <Form onSubmit={this.onClicking}>
@@ -144,7 +145,7 @@ class SignUpForm extends Component {
                         </Col>
                         <br />
                         <Col>
-                            <Image src="https://i.picsum.photos/id/19/200/300.jpg?hmac=znGSIxHtiP0JiLTKW6bT7HlcfagMutcHfeZyNkglQFM" alt="Signup Form"></Image>
+                            <Image src={Singup} alt="Signup Form"></Image>
                         </Col>
                     </Row>
                 </Container>

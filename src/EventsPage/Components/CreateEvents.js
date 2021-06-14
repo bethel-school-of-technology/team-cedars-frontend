@@ -99,16 +99,10 @@ const CreateEvents = () => {
                             </Form.Group>
 
                             <Form.Group>
-                                <Button variant="primary" type="submit">Submit</Button>
+                                <Button variant="btn btn-outline-dark" type="submit">Submit</Button>
                             </Form.Group>
 
                         </form>
-                        {/* <p>{title}</p>
-            <p>{description}</p>
-            <p>{date}</p>
-            <p>{time}</p>
-            <p>{host}</p>
-            <p>{location}</p> */}
                     </Col>
                 </Row>
             </Container>
